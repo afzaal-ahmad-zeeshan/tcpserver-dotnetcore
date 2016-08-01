@@ -10,9 +10,9 @@ namespace TCPServer.App.AfzaalAhmadZeeshan
         private static TcpListener listener { get; set; }
         private static bool accept { get; set; } = false;
 
-        public static void StartServer(int port)
+        public static void StartServer(int port, string IP)
         {
-            IPAddress address = IPAddress.Parse("127.0.0.1");
+            IPAddress address = IPAddress.Parse(IP);
             listener = new TcpListener(address, port);
 
             listener.Start();
