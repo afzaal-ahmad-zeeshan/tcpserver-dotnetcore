@@ -1,5 +1,5 @@
 ## TCP Server in .NET Core
-This is a .NET implementation of TCP listener ported on Ubuntu operating system. It runs on the top of .NET Core and can be connected to using any TCP client. 
+This is a .NET Core implementation of `TCPListener` object developed and tested on Ubuntu operating system. It runs on the top of .NET Core and can be connected to using any TCP client &mdash; `nc` or same `telnet` protocols can work for TCP communication. 
 
 ## Usage
 This project can be built and used on any platform that can be supported using .NET Core using the following steps. 
