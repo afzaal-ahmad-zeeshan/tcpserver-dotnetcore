@@ -8,8 +8,10 @@ namespace TCPServer.App.AfzaalAhmadZeeshan
         {
             Console.Write("Enter the port where to run the TCP server: ");
             int port = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the IP address where to run the TCP server: ");
+            var ip = Console.ReadLine();
 
-            TcpServer.StartServer(port);
+            TcpServer.StartServer(port, ip);
             TcpServer.Listen();
         }
     }
