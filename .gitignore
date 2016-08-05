@@ -1,0 +1,5 @@
+# Ignore policies for this project.
+
+*.lock.json
+bin/
+obj/
