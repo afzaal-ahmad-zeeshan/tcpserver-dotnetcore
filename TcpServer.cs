@@ -57,12 +57,11 @@ namespace TCPServer.App.AfzaalAhmadZeeshan
 
                         message = Encoding.ASCII.GetString(buffer);
                         Console.WriteLine(message);
-                    }    
+                    }
                 });
-                
-                Console.WriteLine("Closing connection. {connectedClients} connected at the moment.");
+
+                Console.WriteLine($"Closing connection. {--connectedClients} connected at the moment.");
                 client.GetStream().Dispose();
-                connectedClients--;
             }
         }
     }
